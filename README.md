@@ -1,4 +1,4 @@
-## UBUNTU :  PHP7.4   y APACHE2 
+## AWS EC2 - UBUNTU - T2.MICRO :  PHP7.4 (Composer)   y APACHE2  
 
 root@ip-172-31-95-219:/etc/apache2# php -v
 PHP 7.4.3 (cli) (built: May 26 2020 12:24:22) ( NTS )
@@ -55,15 +55,29 @@ ubuntu@ip-172-31-95-219:/var/www/html$ pwd
 -rw-r--r-- 1 root root 10918 Sep 17 19:30 index.html.bak
 -rw-r--r-- 1 root root   925 Sep 17 23:16 prueba.php
 
-### ARCHIVO VENDOR NECESARIO PARA INICIAR LA CONEXION CON WORDPRESS PHP Se genera 
-### automáticamente con composer para el tema de estilos y funciones php para el
-### tratamiento de woocommerce Las funciones que ofrecen están basadas en http y oauth 1.0
-### For libraries that specify autoload information, Composer generates a vendor/autoload.php file.
-### You can simply include this file and start using the classes that those libraries provide without any extra work
+### ARCHIVO VENDOR NECESARIO PARA INICIAR LA CONEXION CON WORDPRESS PHP 
+Se genera automáticamente con composer para el tema de estilos y funciones php para el
+tratamiento de woocommerce Las funciones que ofrecen están basadas en http y oauth 1.0
+For libraries that specify autoload information, Composer generates a vendor/autoload.php file.
+You can simply include this file and start using the classes that those libraries provide without any extra work
 drwxr-xr-x 4 root root  4096 Sep 17 19:42 vendor/
 
 -------------------------------------------------------------------------------------
-Desplegando a  github
+### Configuraciones
+
+Pasos: 
+-Instalar Apache2
+-InstalarPhp7.4
+-Instalar Composer
+-Verificar que en WORDPRESS este un usuario activo para usar el RestApi DE Woocommerce
+-Configurar la llave de acceso al api de woocommerce restAPI
+-Configurar el comnposer require automattic/woocommerce en todos los llamados al RestAPI de woocommerce
+-Programar los API para las diferentes categorias
+-Realizar pruebas
+-Listo Para consumir el servicio
+
+-------------------------------------------------------------------------------------
+### Desplegando a  github
 ### utp-portal-de-ofertas-RestAPI   
 git config --global user.name "JuanBGonzalez"
 git config --global user.email "juanbgnzlzm@gmail.com"
