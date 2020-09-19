@@ -82,16 +82,27 @@ Pasos:
 ### Desplegando a  github
 ### utp-portal-de-ofertas-RestAPI   
 git config --global user.name "JuanBGonzalez"
+###
 git config --global user.email "juanbgnzlzm@gmail.com"
+###
 git config --list
+###
 git commit -m "Primera version del RESTAPI - UTP -IS - MAESTRIA"
+###
 git status
+###
 git init
+###
 git add html/
+###
 git commit -m "UTP-IS-RESTAPI" html/
+###
 git push -u origin master
+###
 git remote add origin https://github.com/JuanBGonzalez/utp-portal-de-ofertas-RestAPI.git
+###
 git branch -M master
+###
 git push -u origin master
 
 ------------------------------------------------------------------------------------
