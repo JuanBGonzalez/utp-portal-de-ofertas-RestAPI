@@ -63,26 +63,6 @@ ubuntu@ip-172-31-95-219:/var/www/html$ pwd
 drwxr-xr-x 4 root root  4096 Sep 17 19:42 vendor/
 
 -------------------------------------------------------------------------------------
-
-<?php
-require __DIR__ . '/vendor/autoload.php';
-
-use Automattic\WooCommerce\Client;
-
-$woocommerce = new Client(
-    'http://3.210.38.58/',
-    'ck_54c44de2aeeef51ed8070303308be28e293cabea',
-    'cs_d6f9146d45370f72709a57d543e6bc8ff8c00b90',
-    [
-        'version' => 'wc/v3',
-    ]
-);
-$results= $woocommerce->get('customers');
-echo  '<pre><code>' . print_r( $results, true ) . '</code><pre>';
-
-
-
--------------------------------------------------------------------------------------
 Desplegando a  github
 ### utp-portal-de-ofertas-RestAPI   
 git config --global user.name "JuanBGonzalez"
@@ -117,10 +97,3 @@ ubuntu@ip-172-31-95-219:/var/log/apache2$ sudo tail -f error.log.1
 Esto requiere la version sudo apt-get install php7.4-curl nueva
 https://stackoverflow.com/questions/38800606/how-to-install-php-curl-in-ubuntu-16-04
 ------------------------------------------------------------------------------------
-
-
-
-
-
-
-
