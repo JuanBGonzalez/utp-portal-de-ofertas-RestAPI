@@ -19,47 +19,47 @@ php7.4-curl is already the newest version (7.4.3-4ubuntu2.2).
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
 -------------------------------------------------------------------------------------
-CARPETAS RELEVANTES
+# CARPETAS RELEVANTES
 
-# LOG PARA REVISAR QUE MODULOS NOS FALTABAN
+### LOG PARA REVISAR QUE MODULOS NOS FALTABAN
 ubuntu@ip-172-31-95-219:/var/log/apache2$ pwd
 /var/log/apache2
 
-# MODULOS/EXTENSIONES QUE VIENEN CON APACHE2
+### MODULOS/EXTENSIONES QUE VIENEN CON APACHE2
 ubuntu@ip-172-31-95-219:/etc/apache2/mods-available$ PWD
 
-# ARCHIVO DE CONFIGURACION DEL SERVIDOR APACHE
+### ARCHIVO DE CONFIGURACION DEL SERVIDOR APACHE
 ubuntu@ip-172-31-95-219:/etc/apache2$ pwd
 /etc/apache2
 apache2.conf
 
-# ARCHIVOS DE EL RESTAPI. 
+### ARCHIVOS DE EL RESTAPI. 
 ubuntu@ip-172-31-95-219:/var/www/html$ pwd
 /var/www/html
 
-# ARCHIVO RESTAPI PARA CONSUMIR EL API DE WOOCOMERCE
+### ARCHIVO RESTAPI PARA CONSUMIR EL API DE WOOCOMERCE
 -rw-r--r-- 1 root root   395 Sep 17 22:58 clientes.php
 -rw-r--r-- 1 root root   700 Sep 17 22:39 comercios.php
 -rw-r--r-- 1 root root    57 Sep 17 20:21 index.php
 -rw-r--r-- 1 root root   436 Sep 17 22:54 ordenes.php
 -rw-r--r-- 1 root root   438 Sep 17 22:55 productos.php
 
-# ARCHIVO composer NECESARIO PARA INICIAlIZAR 
-# Composer is a tool for dependency management in PHP.
-# it allows you to declare the libraries your project depends
-# on and it will manage (install/update) them for you.
+### ARCHIVO composer NECESARIO PARA INICIAlIZAR 
+### Composer is a tool for dependency management in PHP.
+### it allows you to declare the libraries your project depends
+### on and it will manage (install/update) them for you.
 -rw-r--r-- 1 root root    93 Sep 17 19:41 composer.json
 -rw-r--r-- 1 root root  2222 Sep 17 19:42 composer.lock
 
-# ARCHIVOS DE PRUEBAS 
+### ARCHIVOS DE PRUEBAS 
 -rw-r--r-- 1 root root 10918 Sep 17 19:30 index.html.bak
 -rw-r--r-- 1 root root   925 Sep 17 23:16 prueba.php
 
-# ARCHIVO VENDOR NECESARIO PARA INICIAR LA CONEXION CON WORDPRESS PHP Se genera 
-# automáticamente con composer para el tema de estilos y funciones php para el
-# tratamiento de woocommerce Las funciones que ofrecen están basadas en http y oauth 1.0
-# For libraries that specify autoload information, Composer generates a vendor/autoload.php file.
-# You can simply include this file and start using the classes that those libraries provide without any extra work
+### ARCHIVO VENDOR NECESARIO PARA INICIAR LA CONEXION CON WORDPRESS PHP Se genera 
+### automáticamente con composer para el tema de estilos y funciones php para el
+### tratamiento de woocommerce Las funciones que ofrecen están basadas en http y oauth 1.0
+### For libraries that specify autoload information, Composer generates a vendor/autoload.php file.
+### You can simply include this file and start using the classes that those libraries provide without any extra work
 drwxr-xr-x 4 root root  4096 Sep 17 19:42 vendor/
 
 -------------------------------------------------------------------------------------
@@ -82,12 +82,9 @@ echo  '<pre><code>' . print_r( $results, true ) . '</code><pre>';
 
 
 
-
-
-
 -------------------------------------------------------------------------------------
-Desplegando a 
-## utp-portal-de-ofertas-RestAPI   
+Desplegando a  github
+### utp-portal-de-ofertas-RestAPI   
 git config --global user.name "JuanBGonzalez"
 git config --global user.email "juanbgnzlzm@gmail.com"
 git config --list
@@ -103,7 +100,7 @@ git push -u origin master
 
 ------------------------------------------------------------------------------------
 
-Errores y lecciones aprendidas
+### Errores y lecciones aprendidas
 
 ubuntu@ip-172-31-95-219:/var/log/apache2$ sudo tail -f error.log.1
 [Thu Sep 17 22:46:39.176734 2020] [php7:error] [pid 23851] [client 190.34.17.52:54717] PHP Fatal error:  require_once(): Failed opening required 'HTTP/Request2.php' (include_path='.:/usr/share/php') in /var/www/html/prueba2.php on line 2
