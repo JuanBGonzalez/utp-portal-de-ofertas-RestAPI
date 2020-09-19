@@ -45,9 +45,9 @@ ubuntu@ip-172-31-95-219:/var/www/html$ pwd
 -rw-r--r-- 1 root root   438 Sep 17 22:55 productos.php
 
 ### ARCHIVO composer NECESARIO PARA INICIAlIZAR 
-### Composer is a tool for dependency management in PHP.
-### it allows you to declare the libraries your project depends
-### on and it will manage (install/update) them for you.
+Composer is a tool for dependency management in PHP.
+it allows you to declare the libraries your project depends
+on and it will manage (install/update) them for you.
 -rw-r--r-- 1 root root    93 Sep 17 19:41 composer.json
 -rw-r--r-- 1 root root  2222 Sep 17 19:42 composer.lock
 
@@ -94,7 +94,9 @@ git push -u origin master
 
 ------------------------------------------------------------------------------------
 
-### Errores y lecciones aprendidas
+### Errores y lecciones aprendidas 
+
+OBSERVANDO EL /VAR/LOG/APACHE2  para solucionar problemas
 
 ubuntu@ip-172-31-95-219:/var/log/apache2$ sudo tail -f error.log.1
 [Thu Sep 17 22:46:39.176734 2020] [php7:error] [pid 23851] [client 190.34.17.52:54717] PHP Fatal error:  require_once(): Failed opening required 'HTTP/Request2.php' (include_path='.:/usr/share/php') in /var/www/html/prueba2.php on line 2
