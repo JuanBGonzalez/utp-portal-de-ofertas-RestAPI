@@ -1,5 +1,7 @@
 ## AWS EC2 - UBUNTU - T2.MICRO :  PHP7.4 (Composer)   y APACHE2  
 
+Datos importantes del Servidor
+
 root@ip-172-31-95-219:/etc/apache2# php -v
 PHP 7.4.3 (cli) (built: May 26 2020 12:24:22) ( NTS )
 Copyright (c) The PHP Group
